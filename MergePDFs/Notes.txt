@@ -1,0 +1,56 @@
+﻿Thanks Sanjay Sir for giving me this oppertunity.
+Friends - Very Good Morning, This is my first CODA, will appreciate your support and feedback.
+
+I took this topic as my first CODA, so that i can kick start with CODA sessions.
+
+Let's get started.
+
+"Problem Statement:"
+
+	We have client who wants a program where he wants to merge pdf's
+
+	clients says, I will:
+	1. Specify Directory path in command line and give output pdf name, it should merge all pdfs in that directory path location
+	2. Give specific file names in command line with output pdf file name, it should merge all of them.
+
+"Goal Statement:""
+
+	1. Write C# program that can take inputs from command line and merge pdf's based on client inputs.
+
+Solution Statement:
+
+	Dev Team has chosen to suffice client requirement:
+		1. iTextSharp Library
+		2. C# Console App
+		3. Little Suspense - on what we are arriving here
+
+Business Benefit:
+ 
+  1. Client can share this utility program to his company staff and improve productivity of his day to day task considering his domain.
+
+
+Now Developer got excited as he got new development task from his lead developer and he started coding.
+
+# I will add notes as we progress and build perfect program that help client.
+
+After 1year, user got to know from one of blog that or email or some source saying iTextSharp library is deprecated.
+
+Developer is smart since used OOPS however is missed DI, so he need to make a change at one side in his client code
+
+//Lets do now
+
+So in all we have learnt little bit of OOPS, seperation of concerns and you can leverage DI on this to remove client dependency.
+
+Hope you liked it.
+
+Thank You So Much for your time and patience.
+
+All this wisdom because of Shiv Sir and Sanjay Sir and 
+great people like you who are helping through internet medium(websites, blogs ..etc) and community(CODA)  - writing better software. :) 
+
+Feel free to comment and give a feedback if i could have considered better way to do this work.
+
+Appreciate your presence!!
+
+Cheers!!
+
