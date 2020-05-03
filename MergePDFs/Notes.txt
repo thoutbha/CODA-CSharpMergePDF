@@ -1,5 +1,5 @@
 ﻿Thanks Sanjay Sir for giving me this oppertunity.
-Friends - Very Good Morning, This is my first CODA, will appreciate your support and feedback.
+Friends - Very Good Afternoon, This is my first CODA, will appreciate your support and feedback.
 
 I took this topic as my first CODA, so that i can kick start with CODA sessions.
 
@@ -44,11 +44,6 @@ So in all we have learnt little bit of OOPS, seperation of concerns and you can 
 Hope you liked it.
 
 Thank You So Much for your time and patience.
-
-All this wisdom because of Shiv Sir and Sanjay Sir and 
-great people like you who are helping through internet medium(websites, blogs ..etc) and community(CODA)  - writing better software. :) 
-
-Feel free to comment and give a feedback if i could have considered better way to do this work.
 
 Appreciate your presence!!
 
