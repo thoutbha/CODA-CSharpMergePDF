@@ -15,7 +15,7 @@ namespace MergePDFs
         static void Main(string[] args)
         {
             // Developer started thinking how he can give provision in command 
-            line so that it can suffice 2 uses cases which client has provided( please refer notes to see those 2 requiremets)
+            //line so that it can suffice 2 uses cases which client has provided( please refer notes to see those 2 requiremets)
 
             //Traditional way i can use args array and send it program methods to consider command line inputs and process logic as per inputs, 
             //however he needs a better way so that command line settings are managed well.
@@ -73,6 +73,7 @@ namespace MergePDFs
                 Console.WriteLine(" THIS WONT WORK, rename the file without white-spaces in it");
                 Console.WriteLine(@"  -d C:\Users\Admin\Documents\Csharp -f C# Notes for Professionals.pdf Programming C#.pdf' -o C:\Users\Admin\Documents\Csharp\Csharp_PDFs_Specific.pdf");
 
+                Console.ReadLine();
                 return;
             }
 
@@ -85,6 +86,7 @@ namespace MergePDFs
         {
             Console.WriteLine("Running merger...");
 
+            // ADDING THIS COMMENT TO CHECK IF GIT COMMIT IS WORKING OR NOT.
             // Mapping concrete class PDFMerge which has implmentation with ITextSharp.
             //IMergePDF merger = new PDFMerge();
 
