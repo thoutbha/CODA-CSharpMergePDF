@@ -1,31 +1,12 @@
-Private Sub LoadDataFromConfig()
-        Dim csvFilePath As String = "path\to\your\config.csv"
-        Dim dataTable As New DataTable()
+ Private Sub LoadDataFromXml()
+        Dim xmlFilePath As String = "path\to\your\output.xml"
+        Dim dataSet As New DataSet()
+        dataSet.ReadXml(xmlFilePath)
 
-        ' Read CSV file
-        Dim lines As String() = File.ReadAllLines(csvFilePath)
-        If lines.Length > 0 Then
-            ' Create columns from the first row
-            Dim columns As String() = lines(0).Split(","c)
-            For Each column As String In columns
-                dataTable.Columns.Add(column.Trim())
-            Next
-
-            ' Add rows from the subsequent rows
-            For i As Integer = 1 To lines.Length - 1
-                Dim values As String() = lines(i).Split(","c)
-                Dim dataRow As DataRow = dataTable.NewRow()
-                For j As Integer = 0 To values.Length - 1
-                    dataRow(j) = values(j).Trim()
-                Next
-                dataTable.Rows.Add(dataRow)
-            Next
-        End If
+        ' Assuming the XML structure is correct and there is a DataTable
+        ' named "Documents" in the DataSet
+        Dim dataTable As DataTable = dataSet.Tables("Documents")
 
         ' Assuming you have a DataGridView named dataGridView1
         dataGridView1.DataSource = dataTable
-    End Sub
-
-    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadDataFromConfig()
     End Sub
