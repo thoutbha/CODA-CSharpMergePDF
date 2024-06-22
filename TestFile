@@ -1,12 +1,13 @@
- Private Sub LoadDataFromXml()
+Private Function LoadDataFromXml() As DataTable
         Dim xmlFilePath As String = "path\to\your\output.xml"
         Dim dataSet As New DataSet()
         dataSet.ReadXml(xmlFilePath)
 
         ' Assuming the XML structure is correct and there is a DataTable
         ' named "Documents" in the DataSet
-        Dim dataTable As DataTable = dataSet.Tables("Documents")
-
-        ' Assuming you have a DataGridView named dataGridView1
-        dataGridView1.DataSource = dataTable
-    End Sub
+        If dataSet.Tables.Contains("Documents") Then
+            Return dataSet.Tables("Documents")
+        Else
+            Return Nothing
+        End If
+    End Function
