@@ -1,1 +1,11 @@
-
+{
+            "type": "TextBlock",
+            "text": "Upload a file (.txt, .msg, .xls, .xlsx)",
+            "wrap": True
+        },
+        {
+            "type": "Input.File",  # Microsoft Teams Only
+            "id": "FILEUPLOAD",
+            "allowedFileTypes": [".txt", ".msg", ".xls", ".xlsx"],
+            "maxSizeInMB": 10
+        }
