@@ -11,3 +11,22 @@ Private Function LoadDataFromXml() As DataTable
             Return Nothing
         End If
     End Function
+
+
+# Extract message text which includes the payload
+        message_text = tracker.latest_message.get("text", "")
+        desk = shortask = longask = None
+
+        # Try to extract payload part if present
+        if message_text and message_text.startswith("/pi_plan_intake"):
+            try:
+                # Find and parse JSON payload
+                json_part = message_text.split("/pi_plan_intake", 1)[1]
+                payload = json.loads(json_part)
+                desk = payload.get("DESK")
+                shortask = payload.get("SHORTASK")
+                longask = payload.get("LONGASK")
+            except Exception as e:
+                dispatcher.utter_message(text=f"Error parsing payload: {str(e)}")
+
+        if not desk or not shortask or not longask:
